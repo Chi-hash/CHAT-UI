@@ -57,7 +57,7 @@ function sendMessage() {
   if (!text) return;
   appendMessage({ role: 'user', text });
   inputEl.value = '';
-  // simple auto-reply stub
+  // auto reply
   setTimeout(() => {
     appendMessage({ role: 'assistant', text: `Thanks! I received: "${text}"` });
   }, 700);
@@ -72,5 +72,4 @@ inputEl.addEventListener('keydown', (e) => {
   }
 });
 
-// initial scroll to bottom on load
 window.addEventListener('load', () => setTimeout(scrollToBottom, 50));
