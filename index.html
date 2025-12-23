@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support Chat UI</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="chat-card">
+        <header class="chat-header">
+          <div class="header-left">
+            <div class="avatar header-avatar">T</div>
+            <div class="header-info">
+              <div class="title">T's ChatBot</div>
+              <div class="status"><span class="dot"></span> Online</div>
+            </div>
+          </div>
+          <div class="header-actions">⋮</div>
+        </header>
+
+        <main class="messages">
+          <div class="message assistant">
+            <div class="avatar">T</div>
+            <div class="bubble">
+              <p>Hello! How can I help you with your account today?</p>
+              <span class="time">10:30 AM</span>
+            </div>
+          </div>
+
+          <div class="message user">
+            <div class="bubble">
+              Hi, I'm having trouble updating my billing address. It keeps
+              giving me an error code.
+            </div>
+            <div class="avatar user-avatar">M</div>
+          </div>
+
+          <div class="message assistant">
+            <div class="avatar">T</div>
+            <div class="bubble">
+              <p>
+                I see. Could you please share the error code you are seeing?
+                That will help me diagnose the issue.
+              </p>
+              <span class="time">10:33 AM</span>
+            </div>
+          </div>
+
+          <div class="message user">
+            <div class="bubble">
+              Sure, it says "Error 402: Payment Method Invalid".
+            </div>
+            <div class="avatar user-avatar">M</div>
+          </div>
+
+          <div class="message assistant">
+            <div class="avatar">T</div>
+            <div class="bubble">
+              <p>
+                Thanks! It looks like the card on file might have expired. Can
+                you try adding a new payment method first?
+              </p>
+              <span class="time">10:35 AM</span>
+            </div>
+          </div>
+        </main>
+
+        <div class="composer">
+          <button class="icon attach" aria-label="Attach">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.44 11.05L12.7 19.79a5.5 5.5 0 0 1-7.78-7.78l8.74-8.74a4 4 0 1 1 5.66 5.66l-8.74 8.74a2.5 2.5 0 0 1-3.54-3.54l7.07-7.07"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <input class="input" placeholder="Type your message..." />
+          <button class="send">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 2L11 13"
+                stroke="#fff"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 2L15 22L11 13L2 9L22 2Z"
+                stroke="#fff"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
