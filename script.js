@@ -68,6 +68,7 @@ async function sendMessage() {
 //user message
   appendMessage({ role: 'user', text });
   inputEl.value = '';
+<<<<<<< HEAD
 
 
   const typingId = "typing-" + Date.now();
@@ -114,6 +115,12 @@ async function sendMessage() {
 
     appendMessage({ role: 'assistant', text: "Error: " + error.message });
   }
+=======
+  // auto reply
+  setTimeout(() => {
+    appendMessage({ role: 'assistant', text: `Thanks! I received: "${text}"` });
+  }, 700);
+>>>>>>> 19f76761892af84c119ff76b0bef942f33d08797
 }
 
 
@@ -127,5 +134,8 @@ inputEl.addEventListener('keydown', (e) => {
   }
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19f76761892af84c119ff76b0bef942f33d08797
 window.addEventListener('load', () => setTimeout(scrollToBottom, 50));
