@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
     <div class="page">
@@ -86,8 +87,12 @@
               />
             </svg>
           </button>
-          <input class="input" placeholder="Type your message..." />
-          <button class="send">
+          <input
+            class="input"
+            id="user-input"
+            placeholder="Type your message..."
+          />
+          <button class="send" id="send-btn">
             <svg
               width="16"
               height="16"
